@@ -11,7 +11,7 @@ public class EmployeeDTO {
 	private Boolean sex;
 	private String phone;
 	private String address;
-	private List<EmployeeDTO> listNhanVien = new ArrayList<>();
+	private List<EmployeeDTO> listEmployee = new ArrayList<>();
 	
 	public String getName() {
 		return name;
@@ -43,12 +43,14 @@ public class EmployeeDTO {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public List<EmployeeDTO> getListNhanVien() {
-		return listNhanVien;
+	public List<EmployeeDTO> getListEmployee() {
+		return listEmployee;
 	}
-	public void setListNhanVien(List<EmployeeDTO> listNhanVien) {
-		this.listNhanVien = listNhanVien;
+	public void setListEmployee(List<EmployeeDTO> listEmployee) {
+		this.listEmployee = listEmployee;
 	}
+
+	
 	
 	
 	
