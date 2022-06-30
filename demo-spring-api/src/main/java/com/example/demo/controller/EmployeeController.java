@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.controller.output.ContactControllerOutput;
+import com.example.demo.dto.response.EmployeeResponse;
 import com.example.demo.service.IEmployeeServive;
 
 @CrossOrigin
@@ -19,9 +19,9 @@ public class EmployeeController {
 	private IEmployeeServive iEmployeeServive;
 	
 	@GetMapping(value="/employee")
-	public ContactControllerOutput showContact(@RequestParam("page") int page,
+	public EmployeeResponse showContact(@RequestParam("page") int page,
 			                                   @RequestParam("limit") int limit) {
-		ContactControllerOutput result = new ContactControllerOutput();
+		EmployeeResponse result = new EmployeeResponse();
 		result.setPage(page);
 		Pageable pageable = PageRequest.of(page-1, limit);
 		result.setListResult(iEmployeeServive.findAll(pageable));
