@@ -15,16 +15,16 @@ public class EmployeeEntity{
 	private String name;
 	
 	@Column(name = "age")
-	private Date Birthday;
+	private Date age;
 	
-	@Column(name = "Sex")
-	private Boolean Sex;
+	@Column(name = "sex")
+	private Boolean sex;
 	
-	@Column(name = "Phone")
-	private String Phone;
+	@Column(name = "phone")
+	private String phone;
 	
-	@Column(name = "Address")
-	private String Address;
+	@Column(name = "address")
+	private String address;
 
 
 	
