@@ -7,13 +7,14 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
 import com.example.demo.controller.output.ContactControllerOutput;
 import com.example.demo.service.IEmployeeServive;
 
 @CrossOrigin
 @RestController
-public class ContactController {
-	
+public class EmployeeController {
+
 	@Autowired
 	private IEmployeeServive iEmployeeServive;
 	
