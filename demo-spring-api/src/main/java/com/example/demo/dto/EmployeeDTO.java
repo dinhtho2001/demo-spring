@@ -6,41 +6,42 @@ import java.util.List;
 
 public class EmployeeDTO {
 
-	private String Name;
-	private Date Birthday;
-	private Boolean Sex;
-	private String Phone;
-	private String Address;
+	private String name;
+	private Date age;
+	private Boolean sex;
+	private String phone;
+	private String address;
 	private List<EmployeeDTO> listNhanVien = new ArrayList<>();
+	
 	public String getName() {
-		return Name;
+		return name;
 	}
 	public void setName(String name) {
-		Name = name;
+		this.name = name;
 	}
-	public Date getBirthday() {
-		return Birthday;
+	public Date getAge() {
+		return age;
 	}
-	public void setBirthday(Date birthday) {
-		Birthday = birthday;
+	public void setAge(Date age) {
+		this.age = age;
 	}
 	public Boolean getSex() {
-		return Sex;
+		return sex;
 	}
 	public void setSex(Boolean sex) {
-		Sex = sex;
+		this.sex = sex;
 	}
 	public String getPhone() {
-		return Phone;
+		return phone;
 	}
 	public void setPhone(String phone) {
-		Phone = phone;
+		this.phone = phone;
 	}
 	public String getAddress() {
-		return Address;
+		return address;
 	}
 	public void setAddress(String address) {
-		Address = address;
+		this.address = address;
 	}
 	public List<EmployeeDTO> getListNhanVien() {
 		return listNhanVien;
@@ -48,6 +49,7 @@ public class EmployeeDTO {
 	public void setListNhanVien(List<EmployeeDTO> listNhanVien) {
 		this.listNhanVien = listNhanVien;
 	}
+	
 	
 	
 }

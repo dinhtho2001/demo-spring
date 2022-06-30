@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table (name = "Employee")
-public class EmployeeEntity{
+public class EmployeeEntity extends BaseEntity{
 
 	@Column(name = "name")
 	private String name;
@@ -26,6 +26,4 @@ public class EmployeeEntity{
 	@Column(name = "address")
 	private String address;
 
-
-	
 }
