@@ -24,18 +24,19 @@ public class EmployeeService implements IEmployeeServive{
 	public List<EmployeeDTO> findAll(Pageable pageable) {
 		
 		List<EmployeeDTO> employeeDTOs = new ArrayList<>();
-		List<EmployeeEntity> employeeEntities = employeeRepository.findAll(pageable).getContent();
-		for(EmployeeEntity item : employeeEntities) {
-			EmployeeDTO employeeDTO = employeeConverter.toDTO(item);
-			employeeDTOs.add(employeeDTO);
-		}
+//		List<EmployeeEntity> employeeEntities = employeeRepository.findAll(pageable).getContent();
+//		for(EmployeeEntity item : employeeEntities) {
+//			EmployeeDTO employeeDTO = employeeConverter.toDTO(item);
+//			employeeDTOs.add(employeeDTO);
+//		}
 		return employeeDTOs;
 	}
 
 	@Override
 	public int totalTtem() {
 		
-		return (int)employeeRepository.count();
+		//return (int)employeeRepository.count();
+		return 0;
 	}
 
 }
